@@ -1,0 +1,9 @@
+.slider-container {
+    flex: 0 0 auto;
+    height: 40%;
+    margin: 15px 0;
+}
+.slide-cover{
+    border-radius: 10px;
+    flex: 0 0 150px;
+}

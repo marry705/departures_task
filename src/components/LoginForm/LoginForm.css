@@ -1,0 +1,102 @@
+:root{
+    --color-grey: #C9CACC;
+    --color-light: #FFFFFF;
+    --color-shadow: rgba(0, 0, 0, 0.25);
+    --color-button-dark: #3C4CAD;
+    --color-text-dark: #1157A7;
+    --color-button-light: #00C3FF;
+}
+.blue-text{
+    color: var(--color-button-dark);
+}
+.small-text{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+    margin-right: 10px;
+}
+.wrapper{
+    position: relative;
+    justify-content: center;
+}
+.wrapper .blur-wrapper{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    height: 100vh;
+    width: 100vw;
+    filter: blur(4px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../../assets/images/background.png');
+}
+.wrapper .login-form,
+.wrapper .error-block{
+    min-width: 30vw;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color-light);
+    box-shadow: 0px 4px 4px var(--color-shadow);
+    border-radius: 20px;
+    padding: 35px;
+    font-size: 16px;
+    min-height: 270px;
+}
+.hidden { display: none; }
+.wrapper .login-form label{
+    line-height: 19px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+}
+.wrapper .login-form label input{
+    border: 1px solid var(--color-grey);
+    border-radius: 4px;
+    padding: 5px;
+    flex: 0 0 34px;
+    margin: 10px 0;
+}
+.wrapper .login-form .is-invalid input{
+    border: 1px solid red;
+}
+.wrapper .login-form .is-invalid {
+    color: red;
+}
+.wrapper .login-form .is-invalid p{
+    color: red;
+}
+.login-form button{
+    border: none;
+    border-radius: 4px;
+    background: linear-gradient(to top left, var(--color-button-dark), var(--color-button-light));
+    color: var(--color-light);
+    padding: 5px;
+    flex: 0 0 34px;
+    width: 116px;
+    font-size: 16px;
+    align-self: flex-end;
+}
+.wrapper .login-form button:active{
+    border: 1px solid rgba(29, 138, 216, 0.3);
+    opacity: 0.7;
+}
+.wrapper .login-form button:disabled,
+.wrapper .login-form button[disabled]{
+    opacity: 0.5;
+}
+.wrapper .login-form h2{
+    line-height: 29px;
+    font-weight: 500;
+    text-align: center;
+    font-size: 24px;
+    flex: 0 0 auto;
+}
