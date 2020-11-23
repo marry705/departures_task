@@ -1,7 +1,7 @@
 import IMAGE1 from '../assets/images/slide1.jpg';
-import IMAGE2 from '../assets/images/slide2.jpeg';
+import IMAGE2 from '../assets/images/slide2.jpg';
 import IMAGE3 from '../assets/images/slide3.jpg';
-import IMAGE4 from '../assets/images/slide4.jpeg';
+import IMAGE4 from '../assets/images/slide4.jpg';
 
 const AUTHENTICATION = {
     UPDATE_PASSWORD: 'UPDATE_PASSWORD',

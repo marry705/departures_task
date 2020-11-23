@@ -17,7 +17,7 @@ export const departuresReducer = (state = initialState, action) => {
           return {...state, outboundpartialDate: action.payload}
   
         case REQUEST.REQUEST_DATA:
-          return {...state, isLoading: true, departures: []}
+          return {...state, isLoading: true, departures: [], favoriteCount: 0}
   
         case REQUEST.REQUEST_DATA_SUCCEEDED:
           return {...state, isLoading: false, departures: action.payload}
